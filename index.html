@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" style="color: wheat; background-color: black;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Fernando Rodriguez">
+        <meta name="discrption" content="This is a basic BoilerPlate">
+
+        <meta property="og:image" content="Favacon.png">
+        <meta property="FavaCon" content="Chems with code">
+        <meta property="A picture of Chems with Code writen" content="Future FavaCon">
+        <link rel="shortcut icon" href="Favacon.png" type="image/x-icon">
+        
+        <title>Pratice</title>
+        <h1>Advanced text semantics</h1>
+    </head>
+    <body <!--style="background-image: url(images/pexels-rio-kuncoro-3829603.jpg);"-->>
+        <a href="aboutUs.html">About Us</a>
+        <br>
+        <a href="images/image.html">Images</a>
+        <img src="https://cdn.vox-cdn.com/thumbor/p01ezbiuDHgRFQ-htBCd7QxaYxo=/0x105:2012x1237/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="google logo" width="200px" height="100px" title="This is a link to the google home page">
+
+        <p>
+        Let's start with a quote:
+
+        <blockquote>By default,
+        <abbr title="Hypertext Markup Language">HTML</abbr>
+        is accessible, if used correctly.</blockquote>  
+        <abbr title="Cascading Style Sheet">CSS</abbr>can also be used to make web pages more, or less, accessible.</p>
+        <p>
+        Chemical Formulae: 
+        <dl>
+            <dt>H<sub>2</sub>0</dt>
+            <dd>(Water)</dd>
+            <dt>C<sub>2</sub>H<sub>6</sub>O</dt>
+            <dd>(Ethanol)</dd>
+        </dl>
+        Dates:
+        <dl>
+            <dt>December 25<sup>th</sup> 2019</dt>
+            <dd>(Christmas Day)</dd>
+            <dt>November 2<sup>nd</sup> 2019</dt>
+            <dd>(Día de los Muertos)</dd>
+        </dl>
+        </p>
+
+    <p>
+        <code>
+            <pre>
+                var para = document.querySelector('p'):
+                para.onClick = function() {
+                    alert('Owww, stop poking me!');
+                }
+            </pre>
+        </code>
+    </p>
+    <p>
+        You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.<br>
+        In the above JavaScript example, <var>para</var> represents a paragraph element.
+        Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.<br>
+        <code>
+            <pre>
+            $ ping mozilla.org 
+        PING mozilla.org (63.245.215.20): 56 data bytes 64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms
+            </pre>
+        </code>
+    </p>
+    <p>
+        &Fopf; &eopf; &ropf; &nopf; &aopf; &nopf; &dopf; &oopf; <br> &Rfr; &ofr; &dfr; &rfr; &gfr; &ufr; &efr; &zfr; <br> &#129312 &#128566 &#129327
+        <!--UniCode-->
+    </p>
+
+    <form action="data.json" method="post">
+        <fieldset>
+            <legend>Medical Questionare</legend>
+            <p>
+                <label for="name:">Write your first and last name.</label>
+                <input type="text" id="name" name="user.name">
+                <!--id must match with name in label-->
+            </p>
+
+            <p>
+                <label for="MedHist">Please fill in your medical history</label><br>
+                <textarea name="user.hist" id="MedHist" cols="30" rows="10" disabled ></textarea>
+                <!--make a text area and then disabel it-->
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <input type="reset" value="Reset">
+
+            </p>
+
+            <p>
+                <label for="Img">Please upload an image of your face:</label>
+                <input type="file" id="Img" name="user.Img" accept=".jpg, .jpeg">
+                <input type="submit">
+            </p>
+
+            <p>
+                <h3>Please check off the boxes if you have that condition</h3>
+                    <label for="CheckBoxes">Allergies</label>
+                    <input type="checkbox" id="CheckBoxes" name="user.checkboxes" value="conditions"><br>
+                    <label for="CheckBoxes">Cancer</label>
+                    <input type="checkbox" id="CheckBoxes" name="user.checkboxes" value="conditions"><br>
+                    <label for="CheckBoxes">High Blood preseure</label>
+                    <input type="checkbox" id="CheckBoxes" name="user.checkboxes" value="conditions"><br>
+                    <label for="condition_4">
+                    <!--Another way to make a checkbox-->
+                        <input type="checkbox" name="condition_4" id="condition_4">
+                        Dietbetites
+                    </label>
+                    <!--Creates checkboxes-->
+            </p>
+
+            <p>
+                <lable for="UserName">Type your Username</lable>
+                <input type="text" id="UserName" name="user.username">
+
+                <lable for="password">Password</lable>
+                <input type="password" id="password" name="user.password">
+                <!--when using type="password" it will obscure the text-->
+            </p>
+
+            <p>
+                <h3>What is your age?</h3>
+                <label for="Age_1">0-12</label>
+                <input type="radio" id="Age_1" name="user.age"><br>
+                <label for="Age_2">13-20</label>
+                <input type="radio" id="Age_2" name="user.age"><br>
+                <label for="Age_3">21+</label>
+                <input type="radio" id="Age_3" name="user.age"><br>
+                <!--Create a button where only one can be selected-->
+
+            </p>
+
+
+
+
+
+
+
+        </fieldset>
+    </form>
+    </body>
+</html>
